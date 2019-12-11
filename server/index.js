@@ -13,6 +13,19 @@ const io = socketio(server);
 io.on('connection', (socket) => {
   console.log('a user connected');
 
+  socket.on('join', ({ name, room }, callback) => {
+    console.log(name, room);
+
+    // error testing
+    // const error = true;
+
+    // if(error) {
+    //   callback({ error: 'error'});
+    // }
+
+    callback();
+  })
+
   socket.on('disconnect', () => {
     console.log('a user disconnected');
   });
