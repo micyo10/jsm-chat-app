@@ -10,8 +10,8 @@ React: https://reactjs.org/
 
 A personal project using a video tutorial: https://www.youtube.com/watch?v=ZwFA3YMfkoc
 
-My goal was to better familiarize myself with the React library,
-while at the same time, creating a fun application
+My goal was to better familiarize myself with the React library
+while at the same time creating a fun application
 
 To run the application:
 In two separate commant prompt windows, run 'npm start' for both client and server directories
