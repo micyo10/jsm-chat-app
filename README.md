@@ -1,4 +1,7 @@
 # jsm-chat-app
+
+// INCOMPLETE PROJECT
+
 Chat App using Socket.io, Node.js, and React
 
 Socket.io: https://socket.io/
