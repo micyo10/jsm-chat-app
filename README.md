@@ -2,8 +2,11 @@
 Chat App using Socket.io, Node.js, and React
 
 Socket.io: https://socket.io/
+
 Node.js: https://nodejs.org/en/
+
 React: https://reactjs.org/
+
 
 A personal project using a video tutorial: https://www.youtube.com/watch?v=ZwFA3YMfkoc
 
