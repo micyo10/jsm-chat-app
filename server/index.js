@@ -33,6 +33,8 @@ io.on('connection', (socket) => {
     // join function joins a user to a room, takes room from the user array, room item
     socket.join(user.room);
 
+    io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room)});
+
     callback();
   })
 
@@ -41,6 +43,7 @@ io.on('connection', (socket) => {
     const user = getUser(socket.id);
 
     io.to(user.room).emit('message', {user: user.name, text: message});
+    io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room)});
 
     callback();
   });
